@@ -1,0 +1,24 @@
+{
+  "name": "playwright-runner-project",
+  "version": "1.0.0",
+  "description": "playWrightRunnerProject",
+  "main": "index.js",
+  "scripts": {
+    "test": "set FOLIO_JUNIT_OUTPUT_NAME=test-results/junit.xml && npx folio --reporter=junit,line --param headful --param slowMo=100 --param video --param screenshotOnFailure",
+    "snapshotUpdate" :"npx folio --update-snapshots"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igopisrinivasan/playWrightRunnerProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igopisrinivasan/playWrightRunnerProject/issues"
+  },
+  "homepage": "https://github.com/igopisrinivasan/playWrightRunnerProject#readme",
+  "devDependencies": {
+    "@playwright/test": "^0.180.0"
+  }
+}
