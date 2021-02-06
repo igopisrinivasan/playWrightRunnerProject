@@ -7,7 +7,7 @@ Zero config cross-browser end-to-end testing for web apps. Browser automation wi
 ### Installation
 
 ```sh
-npm i -D @playwright/test
+yarn install
 ```
 
 
