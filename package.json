@@ -20,5 +20,9 @@
   "homepage": "https://github.com/igopisrinivasan/playWrightRunnerProject#readme",
   "devDependencies": {
     "@playwright/test": "^0.180.0"
+  },
+  "dependencies": {
+    "@types/config": "0.0.38",
+    "config": "^3.3.3"
   }
 }
