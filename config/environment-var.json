@@ -1,0 +1,16 @@
+{
+    "login": {
+        "email": "LOGIN_EMAIL",
+        "password": "LOGIN_PASSWORD",
+        "url": "LOGIN_URL"
+    },
+    "users": {
+        "newUser": {
+            "email": "NEW_USER_EMAIL",
+            "password": "NEW_USER_PASSWORD"
+        }
+    },
+    "dashboard": {
+        "url": "DASHBOARD_URL"
+    }
+}

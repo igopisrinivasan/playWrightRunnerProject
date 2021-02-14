@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@types/config": "0.0.38",
-    "config": "^3.3.3"
+    "config": "^3.3.3",
+    "jest-stare": "^2.2.1"
   }
 }
