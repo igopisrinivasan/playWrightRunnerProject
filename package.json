@@ -4,7 +4,7 @@
   "description": "playWrightRunnerProject",
   "main": "index.js",
   "scripts": {
-    "test": "set FOLIO_JUNIT_OUTPUT_NAME=test-results/junit.xml && npx folio --reporter=junit,line --param slowMo=100 --param video --param screenshotOnFailure",
+    "test": "set FOLIO_JUNIT_OUTPUT_NAME=test-results/junit.xml && npx folio --reporter=junit,line --param headful --param slowMo=100 --param video --param screenshotOnFailure",
     "snapshotUpdate": "npx folio --update-snapshots"
   },
   "repository": {
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/igopisrinivasan/playWrightRunnerProject#readme",
   "devDependencies": {
-    "@playwright/test": "^0.180.0"
+    "@playwright/test": "^0.191.0"
   },
   "dependencies": {
     "@types/config": "0.0.38",

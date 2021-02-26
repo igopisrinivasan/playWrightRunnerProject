@@ -1,5 +1,5 @@
 import { folio as baseFolio } from "@playwright/test";
-import { BrowserContextOptions } from "playwright";
+import { LaunchOptions,BrowserContextOptions } from "playwright";
 
 const builder = baseFolio.extend();
 
@@ -9,6 +9,14 @@ builder.contextOptions.override(async ({ contextOptions }, runTest) => {
     viewport: { width: 1920, height: 1080 }
   }
   await runTest(modifiedOptions);
+});
+
+builder.browserOptions.override(async ({ browserOptions }, runTest) => {
+     const modifiedOptions: LaunchOptions = {
+      ...browserOptions, // Default options
+      slowMo: 50,
+     }
+     await runTest(modifiedOptions);
 });
 
 const folio = builder.build();
